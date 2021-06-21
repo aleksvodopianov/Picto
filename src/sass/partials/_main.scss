@@ -132,6 +132,7 @@ main {
             .title-goes-here_second {
                 display: flex;
                 background: #ffffff;
+                margin-bottom: 15px;
 
                 .title-goes-here_second_picture {
                     width: 269px;
@@ -159,6 +160,49 @@ main {
                         font-size: 14px;
                         line-height: 1.57;
                         color: #a7a7a7;
+                    }
+                }
+            }
+            .our-work {
+                display: flex;
+                flex-direction: column;
+                background: #ffffff;
+                margin-bottom: 15px;
+                padding-top: 30px;
+
+                .our-work_title {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h2 {
+                        text-align: center;
+                        font-family: OpenSans;
+                        font-size: 18px;
+                        line-height: 1;
+                        letter-spacing: -0.54px;
+                        color: #343538;
+                    }
+                    p {
+                        margin: 24px 0 27px 0;
+                        text-align: center;
+                        font-family: HelveticaNeue;
+                        font-size: 14px;
+                        line-height: 1.57;
+                        color: #a7a7a7;
+                    }
+                }
+                .our-work_pictures {
+                    ul {
+                        display: block;
+                        li {
+                            width: 200px;
+                            height: 175px;
+                            float: left;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
                     }
                 }
             }
