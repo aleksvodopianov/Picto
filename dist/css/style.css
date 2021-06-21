@@ -606,6 +606,29 @@ main #content .layout .our-work .our-work_pictures ul li img {
   width: 100%;
   height: 100%;
 }
+
+main #content .layout .ad-space {
+  margin-bottom: 15px;
+}
+
+main #content .layout .ad-space div {
+  width: 600px;
+  height: 120px;
+  background-color: #343538;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 30px;
+}
+
+main #content .layout .ad-space div p {
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.56;
+  letter-spacing: -0.54px;
+  text-align: center;
+  color: #ffffff;
+}
 @supports (-webkit-appearance:none){
 main #content .layout .main-section-top .main-section-top_image div img{background:url("../img/imgmaintopimage.png") 0 0 no-repeat}
 main #content .layout .title-goes-here_first .title-goes-here_first_picture img{background:url("../img/img-sendicate.png") 0 0 no-repeat}
