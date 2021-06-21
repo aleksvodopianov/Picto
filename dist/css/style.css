@@ -384,8 +384,12 @@ main #content .layout .main-section-top .main-section-top_text .main-blog-text {
   margin: 25px 0;
 }
 
-main #content .layout .main-section-top .main-section-top_text .details-button {
+main #content .layout .main-section-top .main-section-top_text .btn-container {
   width: 100px;
+}
+
+main #content .layout .main-section-top .main-section-top_text .btn-container .details-button {
+  width: 100%;
   height: 37px;
   color: #ffffff;
   background: #343538;
@@ -504,6 +508,39 @@ main #content .layout .title-goes-here_second {
   display: -ms-flexbox;
   display: flex;
   background: #ffffff;
+}
+
+main #content .layout .title-goes-here_second .title-goes-here_second_picture {
+  width: 269px;
+  height: 246px;
+}
+
+main #content .layout .title-goes-here_second .title-goes-here_second_picture img {
+  width: 100%;
+  height: 100%;
+}
+
+main #content .layout .title-goes-here_second .title-goes-here_second_text {
+  width: calc(100% - 269px);
+  height: 246px;
+  padding: 40px 30px 0 81px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main #content .layout .title-goes-here_second .title-goes-here_second_text h2 {
+  font-family: OpenSans;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.54px;
+  color: #343538;
+}
+
+main #content .layout .title-goes-here_second .title-goes-here_second_text p {
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #a7a7a7;
 }
 @supports (-webkit-appearance:none){
 main #content .layout .main-section-top .main-section-top_image div img{background:url("../img/imgmaintopimage.png") 0 0 no-repeat}
