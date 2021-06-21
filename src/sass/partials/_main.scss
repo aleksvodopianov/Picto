@@ -52,6 +52,7 @@ main {
             }
             .main-section-options {
                 background: #ffffff;
+                margin-bottom: 15px;
                 ul {
                     display: flex;
                     li {
@@ -87,6 +88,46 @@ main {
                         }
                     }
                 }
+            }
+            .title-goes-here_first {
+                display: flex;
+                height: 248px;
+                background: #ffffff;
+                margin-bottom: 15px;
+                box-sizing: border-box;               
+                .title-goes-here_first_text {
+                    width: calc(100% - 291px);
+                    height: 248px;
+                    padding: 40px 0 0 29px;
+                    box-sizing: border-box;
+                    h2 {
+                        font-family: OpenSans;
+                        font-size: 18px;
+                        color: #343538;
+                        margin-bottom: 24px;
+                    }
+                    p {
+                        font-family: HelveticaNeue;
+                        font-size: 14px;
+                        line-height: 1.57;
+                        text-align: left;
+                        color: #a7a7a7;
+                    }
+                }
+                .title-goes-here_first_picture{
+                    width: 291px;
+                    height: 230px;
+                    margin-top: 17px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        background: url("../img/img-sendicate.png") 0 0 no-repeat;
+                    }
+                }
+            }
+            .title-goes-here_second {
+                display: flex;
+                background: #ffffff;
             }
         }
     }
