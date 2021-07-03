@@ -684,6 +684,39 @@ main #content .layout .ad-space div p {
   text-align: center;
   color: #ffffff;
 }
+
+main #content .layout .title-goes-here_third {
+  width: 600px;
+  height: 163px;
+}
+
+main #content .layout .title-goes-here_third div {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 35px 35px 27px 29px;
+  background-color: #ffffff;
+}
+
+main #content .layout .title-goes-here_third div h2 {
+  font-family: OpenSans;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.54px;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #343538;
+}
+
+main #content .layout .title-goes-here_third div p {
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.57;
+  text-align: left;
+  color: #a7a7a7;
+}
 @supports (-webkit-appearance:none){
 main #content .layout .main-section-top .main-section-top_image div img{background:url("../img/imgmaintopimage.png") 0 0 no-repeat}
 main #content .layout .title-goes-here_first .title-goes-here_first_picture img{background:url("../img/img-sendicate.png") 0 0 no-repeat}
