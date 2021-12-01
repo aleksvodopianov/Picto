@@ -16,3 +16,42 @@ testWebP(function (support) {
         console.log('not use webp');
     }
 });
+
+const dbIconList = {
+    iconName: [
+        'twitter',
+        'facebook',
+        'rss',
+        'pinterest',
+        'google',
+        'dribbble',
+        'linkedin',
+        'flickr',
+    ],
+    iconSrc: [
+        '../icons/icon_twitter.webp',
+        '../icons/icon_facebook.webp',
+        '../icons/icon_rss.webp',
+        '../icons/icon_pinterest.webp',
+        '../icons/icon_google+.webp',
+        '../icons/icon_dribbble.webp',
+        '../icons/icon_linkedin.webp',
+        '../icons/icon_flickr.webp',
+    ],
+};
+
+console.log(dbIconList);
+
+window.addEventListener('DOMContentLoaded', () => {
+    const iconList = document.querySelector('.icon_list');
+    iconList.innerHTML = '';
+    dbIconList.iconName.forEach((elem, index) => {
+        iconList.innerHTML += `
+            <li>
+                <a href="#">
+                    <img src="${dbIconList.iconSrc[index]}" alt="${elem}">
+                </a>
+            </li>
+        `;
+    });
+});
