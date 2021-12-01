@@ -29,18 +29,16 @@ const dbIconList = {
         'flickr',
     ],
     iconSrc: [
-        '../icons/icon_twitter.webp',
-        '../icons/icon_facebook.webp',
-        '../icons/icon_rss.webp',
-        '../icons/icon_pinterest.webp',
-        '../icons/icon_google+.webp',
-        '../icons/icon_dribbble.webp',
-        '../icons/icon_linkedin.webp',
-        '../icons/icon_flickr.webp',
+        'icons/icon_twitter.png',
+        'icons/icon_facebook.png',
+        'icons/icon_rss.png',
+        'icons/icon_pinterest.png',
+        'icons/icon_google+.png',
+        'icons/icon_dribbble.png',
+        'icons/icon_linkedin.png',
+        'icons/icon_flickr.png',
     ],
 };
-
-console.log(dbIconList);
 
 window.addEventListener('DOMContentLoaded', () => {
     const iconList = document.querySelector('.icon_list');
