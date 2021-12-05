@@ -40,9 +40,10 @@ const dbIconList = {
     ],
 };
 
+const iconList = document.querySelector('.icon_list');
+iconList.innerHTML = '';
+
 window.addEventListener('DOMContentLoaded', () => {
-    const iconList = document.querySelector('.icon_list');
-    iconList.innerHTML = '';
     dbIconList.iconName.forEach((elem, index) => {
         iconList.innerHTML += `
             <li>
