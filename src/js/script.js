@@ -40,10 +40,20 @@ const dbIconList = {
     ],
 };
 
-const iconList = document.querySelector('.icon_list');
-iconList.innerHTML = '';
+const dbImagesList = [
+    "img/img_history.png",
+    "img/img_browser-screen-1.png",
+    "img/img_browser-screen-2.png",
+    "img/img_browser-screen-3.png",
+    "img/img_browser-screen-4.png"
+];
 
 window.addEventListener('DOMContentLoaded', () => {
+    const iconList = document.querySelector('.icon_list'),
+          carouselImage = document.querySelector('.carousel_image'),
+          carouselImagesList = document.querySelectorAll('.carousel_images_list_item');
+
+    iconList.innerHTML = '';
     dbIconList.iconName.forEach((elem, index) => {
         iconList.innerHTML += `
             <li>
@@ -53,4 +63,20 @@ window.addEventListener('DOMContentLoaded', () => {
             </li>
         `;
     });
+
+    carouselImagesList.forEach((elem, index) => {
+        // console.log(elem);
+        elem.addEventListener('click', () => {
+            carouselImage.innerHTML = `<img src="${dbImagesList[index]}" alt="History">`;
+            // carouselImage.style.src = `${dbImagesList[index]}`;
+            // dbImagesList.forEach((elem, index) => {
+            //     // carouselImage.style.src = `${dbImagesList[index]}`;
+            //     carouselImage.innerHTML = `
+            //     <picture><source srcset=" ../img/img_history.webp " type="image/webp "><img src="${dbImagesList[index]}" alt="History"></picture>`;
+            // });
+            console.log(carouselImage.style.src);
+        });
+    });
+
+    
 });

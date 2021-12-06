@@ -721,7 +721,7 @@ main #content .layout .title-goes-here_third div p {
 
 main #content .layout .check_this_out-section {
   width: 600px;
-  height: 391px;
+  height: auto;
 }
 
 main #content .layout .check_this_out-section div {
@@ -755,12 +755,28 @@ main #content .layout .check_this_out-section div p {
 
 main #content .layout .check_this_out-section div div {
   width: 600px;
-  height: 280px;
+  height: auto;
 }
 
 main #content .layout .check_this_out-section div div img {
   width: 100%;
-  height: 100%;
+  height: auto;
+}
+
+main #content .layout .check_this_out-section div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: circle;
+}
+
+main #content .layout .check_this_out-section div ul li {
+  margin: 0 15px;
+  cursor: pointer;
+  margin: 35px 15px;
 }
 @supports (-webkit-appearance:none){
 main #content .layout .main-section-top .main-section-top_image div img{background:url("../img/imgmaintopimage.png") 0 0 no-repeat}
